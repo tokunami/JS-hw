@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>UFO Sighting</title>
+  <link rel="stylesheet" href="https://bootswatch.com/4/minty/bootstrap.min.css">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" href="stylesheets/styles.css"> -->
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href="#">UFO Sighting</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+    <div class="hero text-center">
+      <h1>WAKE UP SHEEPLE!</h1>
+    </div>
+    <div class="container">
+      <div class="row margin-top-50">
+        <div class="col-md-2">
+          <aside class="filter">
+            <div class="panel panel-default">
+              <div class="panel-heading">Filter Search</div>
+              <div class="panel-body">
+                <div class="form-group">
+                  <ul class="list-group">
+                    <li class="list-group-item">
+                      <label for="dateSearch">Date Search</label>
+                      <input class="form-control" id="dateSearch" type="text" placeholder="1/11/2011">
+                    </li>
+                    
+                    <li class="list-group-item">
+                      <label for="resultsNum">Results Per Page</label>
+                      <select id="resultsNum"class="custom-select">
+                    <option default value="25">25</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                  </select>
+                    </li>
+                    <li class="list-group-item">
+                      <button id="filter" class="btn btn-danger">Filter</button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+        <div class="col-md-10">
+          <div id="table-area" class="">
+            <table id="ufoTable" class="table table-striped table-hover">
+              <thead>
+                <tr>
+                  <th class="table-head">Date/Time</th>
+                  <th class="table-head">City</th>
+                  <th class="table-head">State</th>
+                  <th class="table-head">Country</th>
+                  <th class="table-head">Shape</th>
+                  <th class="table-head">Comments</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-sm-offset-0 col-md-10 col-md-offset-2 text-center pagination-container">
+          <ul class="pagination">
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
